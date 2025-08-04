@@ -1,80 +1,3 @@
-# import os
-# import magic
-
-# os.chdir(r"D:\blahh")
-# i = 0
-
-
-# lst = os.listdir(r"D:\blahh")
-# length = len(lst)
-# mime = magic.Magic(mime=True)
-# print(lst[i])
-
-
-# for i in range(0,length):
-
-#     file_type = mime.from_file(lst[i])
-
-
-#     if file_type == 'text/plain':
-#         if os.path.isdir('text_files') == True:
-#             os.rename(lst[i],f"text_files/{lst[i]}")
-#             continue
-#         else:
-#             os.mkdir('text_files')
-#             os.rename(lst[i],f"text_files/{lst[i]}")
-
-#     elif file_type == 'image/png':
-#         if os.path.isdir('PNG_files') == True:
-#             os.rename(lst[i], f"PNG_files/{lst[i]}")
-#             continue
-#         else:
-#             os.mkdir('PNG_files')
-#             os.rename(lst[i], f"PNG_files/{lst[i]}")
-        
-    
-#     elif file_type == 'image/jpeg':
-#         if os.path.isdir('JPEG_files') == True:
-#             os.rename(lst[i], f"JPEG_files/{lst[i]}")
-#             continue
-#         else:
-#             os.mkdir('JPEG_files')
-#             os.rename(lst[i], f"JPEG_files/{lst[i]}")
-
-#     elif file_type == 'application/pdf':
-#         if os.path.isdir('PDF_files') == True:
-#             os.rename(lst[i], f"PDF_files/{lst[i]}")
-#             continue
-#         else:
-#             os.mkdir('PDF_files')
-#             os.rename(lst[i], f"PDF_files/{lst[i]}")
-    
-#     elif file_type == 'audio/mpeg':
-#         if os.path.isdir('MP3_files') == True:
-#             os.rename(lst[i], f"MP3_files/{lst[i]}")
-#             continue
-#         else:
-#             os.mkdir('MP3_files')
-#             os.rename(lst[i], f"MP3_files/{lst[i]}")
-
-#     elif file_type == 'text/html':
-#         if os.path.isdir('HTML_files') == True:
-#             os.rename(lst[i], f"HTML_files/{lst[i]}")
-#             continue
-#         else:
-#             os.mkdir('HTML_files')
-#             os.rename(lst[i], f"HTML_files/{lst[i]}")
-
-#     elif file_type == 'video/mp4':
-#         if os.path.isdir('MP4_files') == True:
-#             os.rename(lst[i], f"MP4_files/{lst[i]}")
-#             continue
-#         else:
-#             os.mkdir('MP4_files')
-#             os.rename(lst[i], f"MP4_files/{lst[i]}")
-
-#     elif file_type == None:
-#         continue
 
 import os
 import magic
@@ -143,3 +66,4 @@ for file in os.listdir(base_path):
 
 # mime = magic.from_file("image.png", mime=True)
 # print(mime)  # e.g. "image/jpeg"
+
