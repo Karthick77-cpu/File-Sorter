@@ -3,7 +3,12 @@ import os
 import magic
 
 # Define base path
-base_path = r"D:\blahh"
+base_path = input("Enter your folder path: ")
+
+#Raises a custom error when an invalid directory path is given as the input
+if not os.path.isdir(base_path)
+    raise DirectoryNotFoundError(base_path)
+
 os.chdir(base_path)
 
 # Create MIME-type to folder mapping
@@ -59,11 +64,5 @@ for file in os.listdir(base_path):
 
 
 
-#while True:
 
-    
-
-
-# mime = magic.from_file("image.png", mime=True)
-# print(mime)  # e.g. "image/jpeg"
 
