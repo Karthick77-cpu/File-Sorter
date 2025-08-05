@@ -19,7 +19,13 @@ mime_folder_map = {
     "application/pdf": "PDF_files",
     "audio/mpeg": "MP3_files",
     "text/html": "HTML_files",
-    "video/mp4": "MP4_files"
+    "video/mp4": "MP4_files",
+    "text/csv":  "CSV_files",
+    "image/gif": "GIF_files",
+    "application/zip": "ZIP_files",
+    "application/json": "JSON_files",
+    "application/xml": "XML_files"
+    
 }
 
 # Initialize magic
@@ -52,6 +58,7 @@ for file in os.listdir(base_path):
         print(f"Moved {file} to {target_folder}")
 
     
+
 
 
 
