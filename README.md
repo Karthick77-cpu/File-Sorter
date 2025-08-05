@@ -1,1 +1,1 @@
-My program helps to sort files of different files.
+My program helps to sort files of different types.
